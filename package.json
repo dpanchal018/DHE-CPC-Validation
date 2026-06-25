@@ -1,0 +1,25 @@
+{
+  "name": "dhe-cpc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DHE CPC Playwright automation",
+  "license": "ISC",
+  "scripts": {
+    "test": "playwright test --headed",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen",
+    "scrape:dropdowns": "node scripts/scrape-dropdown-values.mjs",
+    "export:dropdowns": "node scripts/export-dropdown-values.mjs",
+    "build:dropdown-excel:ar": "node scripts/build-ar-dropdown-excel.mjs",
+    "build:dropdown-excel:trex": "node scripts/build-trex-dropdown-excel.mjs",
+    "prepare:report": "node scripts/prepare-report-run.mjs",
+    "postinstall": "playwright install chromium"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.4.0",
+    "@playwright/test": "^1.61.0",
+    "xlsx": "^0.18.5"
+  }
+}

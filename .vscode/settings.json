@@ -1,0 +1,7 @@
+{
+  "workbench.colorTheme": "Cursor Light",
+  "npm.exclude": [
+    "**/node_modules/**"
+  ],
+  "npm.packageManager": "npm"
+}
